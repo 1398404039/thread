@@ -1,4 +1,4 @@
-package java.utils;
+package main.utils;
 
 public class ThreadTestUtils1 {
     public static void printTest(String className,int index){

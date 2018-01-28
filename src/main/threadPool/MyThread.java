@@ -1,7 +1,7 @@
-package java.threadPool;
+package main.threadPool;
 
-import java.utils.DateUtils;
-import java.utils.ThreadTestUtils1;
+import main.utils.DateUtils;
+import main.utils.ThreadTestUtils1;
 
 public class MyThread {
     public static void main(String[] args){

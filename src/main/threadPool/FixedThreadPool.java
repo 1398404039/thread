@@ -1,6 +1,6 @@
-package java.threadPool;
+package main.threadPool;
 
-import java.utils.ThreadTestUtils;
+import main.utils.ThreadTestUtils;
 
 import java.util.ArrayList;
 import java.util.Date;
