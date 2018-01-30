@@ -13,3 +13,4 @@ bin/
 *.iml
 *.log
 logs
+out/
