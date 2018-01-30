@@ -36,14 +36,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ForkJoinDemo.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ForkJoinDemo.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/concurrent/ForkJoinDemo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="239">
-              <caret line="37" column="48" lean-forward="false" selection-start-line="37" selection-start-column="48" selection-end-line="37" selection-end-column="48" />
+            <state relative-caret-position="622">
+              <caret line="48" column="43" lean-forward="true" selection-start-line="48" selection-start-column="43" selection-end-line="48" selection-end-column="43" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="readme.txt" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/concurrent/readme.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="125">
+              <caret line="5" column="9" lean-forward="false" selection-start-line="5" selection-start-column="9" selection-end-line="5" selection-end-column="9" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -97,6 +107,7 @@
         <option value="$PROJECT_DIR$/src/main/threadPool/ThreadPoolExecutorDemo.java" />
         <option value="$PROJECT_DIR$/src/main/concurrent/CountDownLauchDemo.java" />
         <option value="$PROJECT_DIR$/src/main/concurrent/ForkJoinDemo.java" />
+        <option value="$PROJECT_DIR$/src/main/concurrent/readme.txt" />
       </list>
     </option>
   </component>
@@ -403,12 +414,12 @@
       <workItem from="1517135739903" duration="268000" />
       <workItem from="1517186107841" duration="7034000" />
       <workItem from="1517202379592" duration="5495000" />
-      <workItem from="1517279642221" duration="2187000" />
+      <workItem from="1517279642221" duration="2446000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18942000" />
+    <option name="totallyTimeSpent" value="19201000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -617,13 +628,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/concurrent/readme.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/threadPool/readme.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -724,11 +728,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/concurrent/ForkJoinDemo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="239">
-          <caret line="37" column="48" lean-forward="false" selection-start-line="37" selection-start-column="48" selection-end-line="37" selection-end-column="48" />
+        <state relative-caret-position="622">
+          <caret line="48" column="43" lean-forward="true" selection-start-line="48" selection-start-column="43" selection-end-line="48" selection-end-column="43" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/concurrent/readme.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="5" column="9" lean-forward="false" selection-start-line="5" selection-start-column="9" selection-end-line="5" selection-end-column="9" />
+          <folding />
         </state>
       </provider>
     </entry>
