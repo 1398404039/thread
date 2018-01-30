@@ -1,8 +1,6 @@
 package main.concurrent;
 
 
-import sun.java2d.SurfaceDataProxy;
-
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.ForkJoinPool;
 import java.util.concurrent.Future;
@@ -36,27 +34,27 @@ public class ForkJoinDemo extends RecursiveTask<Integer> {
         int sum = 0;
 
         boolean canCompute = (end - start) <= THRESHOLD;
-        if(canCompute){
-            for(int i=start;i<=end;i++){
-                sum+=i;
+        if (canCompute) {
+            for (int i = start; i <= end; i++) {
+                sum += i;
             }
-        }else{
-            int middle=(start+end)/2;
-            ForkJoinDemo leftTask=new ForkJoinDemo(start,middle);
-            ForkJoinDemo rightTask=new ForkJoinDemo(middle+1,end);
+        } else {
+            int middle = (start + end) / 2;
+            ForkJoinDemo leftTask = new ForkJoinDemo(start, middle);
+            ForkJoinDemo rightTask = new ForkJoinDemo(middle + 1, end);
             leftTask.fork();
             rightTask.fork();
-            int leftResult=leftTask.join();
-            int rightResult=rightTask.join();
-            sum=leftResult+rightResult;
+            int leftResult = leftTask.join();
+            int rightResult = rightTask.join();
+            sum = leftResult + rightResult;
         }
         return sum;
     }
 
     public static void main(String[] args) throws ExecutionException, InterruptedException {
-        ForkJoinPool forkJoinPool=new ForkJoinPool();
-        ForkJoinDemo task=new ForkJoinDemo(1,100);
-        Future<Integer> result=forkJoinPool.submit(task);
+        ForkJoinPool forkJoinPool = new ForkJoinPool();
+        ForkJoinDemo task = new ForkJoinDemo(1, 100);
+        Future<Integer> result = forkJoinPool.submit(task);
         System.out.println(result.get());
     }
 }
