@@ -1,4 +1,4 @@
-package main.threadPool;
+package main.threadpool;
 /**
  * @author: 0
  * @create: 2018-01-29 14:42

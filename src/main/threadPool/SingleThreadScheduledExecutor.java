@@ -1,4 +1,4 @@
-package main.threadPool;
+package main.threadpool;
 
 public class SingleThreadScheduledExecutor {
 }
