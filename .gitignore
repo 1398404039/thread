@@ -14,3 +14,4 @@ bin/
 *.log
 logs
 out/
+out/production/thread/main/concurrent/ForkJoinDemo.class
