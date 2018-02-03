@@ -13,7 +13,7 @@ import java.util.concurrent.ThreadFactory;
 public class FixedThreadPool {
 
     public static void main(String[] args) {
-//        ExecutorService java.threadpool = Executors.newFixedThreadPool(5);
+//        ExecutorService java.threadpools = Executors.newFixedThreadPool(5);
         MyThreadFactory myThreadFactory=new MyThreadFactory("TestPool");
         ExecutorService threadPool = Executors.newFixedThreadPool(5,myThreadFactory);
         ThreadTestUtils.threadTest(threadPool);
