@@ -103,9 +103,10 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="953" />
-    <option name="width" value="974" />
-    <option name="height" value="1047" />
+    <option name="x" value="1358" />
+    <option name="y" value="-9" />
+    <option name="width" value="1376" />
+    <option name="height" value="754" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -407,7 +408,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22127000" />
+    <option name="totallyTimeSpent" value="22280000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1358" y="-9" width="1376" height="754" extended-state="6" />
