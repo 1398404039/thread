@@ -14,7 +14,7 @@ public class ThreadPoolExecutorDemo {
 
     public static void main(String[] args){
         System.out.println(date.atStartOfDay());
-//        System.out.println(date.);
+        System.out.println(date);
         System.out.println();
         System.out.println();
         System.out.println();
