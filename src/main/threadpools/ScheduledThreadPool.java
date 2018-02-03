@@ -1,4 +1,4 @@
-package main.threadpool;
+package main.threadpools;
 
 public class ScheduledThreadPool {
 }

@@ -1,4 +1,4 @@
-package main.threadpool;
+package main.threadpools;
 
 import main.utils.DateUtils;
 import main.utils.ThreadTestUtils1;

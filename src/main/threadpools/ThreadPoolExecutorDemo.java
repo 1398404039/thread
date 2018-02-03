@@ -1,4 +1,4 @@
-package main.threadpool;
+package main.threadpools;
 
 import java.time.LocalDate;
 import java.time.LocalTime;
