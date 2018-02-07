@@ -183,8 +183,5 @@ public class WaterImgsUtils {
         }catch (Exception ex){
             System.out.println(ex.getMessage());
         }
-//        pressImage("C://pic//jpg", "C://pic//test.gif", 5000, 5000, 0f);
-//        pressText("C://pic//jpg", "旺仔之印", "宋体", Font.BOLD|Font.ITALIC, 20, Color.BLACK, 0, 0, 8f);
-//        resize("C://pic//4.jpg", 1000, 500, true);
     }
 }
