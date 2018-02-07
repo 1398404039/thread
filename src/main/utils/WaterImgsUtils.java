@@ -180,7 +180,6 @@ public class WaterImgsUtils {
     public static void main(String[] args) throws IOException {
         try{
             pressImage(TARGETIMGPATH,WATERIMGPATH,-1,-1,0.6f);
-            //测试用里测试使用
             //ceshi
         }catch (Exception ex){
             System.out.println(ex.getMessage());
