@@ -9,7 +9,7 @@ public class WorkStealingPool {
         ExecutorService workStealingPool1= Executors.newWorkStealingPool();
         ExecutorService workStealingPool2= Executors.newWorkStealingPool(2);
 
-        
+
         CountDownLatch latch = new CountDownLatch(count);
         Long begin=System.currentTimeMillis();
         for (int i = 0;i < count;i++) {
