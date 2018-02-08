@@ -71,7 +71,7 @@ public class ThreadPoolExecutorDemo {
 
         ExecutorService executorService1 = Executors.newCachedThreadPool();                    //SynchronousQueue
         ExecutorService executorService2 = Executors.newFixedThreadPool(2);         //LinkedBlockingQueue
-        ExecutorService executorService5 = Executors.newSingleThreadExecutor();               //LinkedBlockingQueue
+        ExecutorService executorService5 = Executors.newSingleThreadExecutor();                //LinkedBlockingQueue
         ExecutorService executorService4 = Executors.newScheduledThreadPool(1); //DelayedWorkQueue
         ExecutorService executorService6 = Executors.newSingleThreadScheduledExecutor();      //DelayedWorkQueue
         ExecutorService executorService3 = Executors.newWorkStealingPool();
