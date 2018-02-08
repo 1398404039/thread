@@ -3,6 +3,8 @@ package main.concurrent;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.CountDownLatch;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
 
 /**
  * @author: lwz
@@ -11,32 +13,48 @@ import java.util.concurrent.CountDownLatch;
  */
 public class CountDownLauchDemo {
     public static void main(String[] args) throws InterruptedException {
-        List<Integer> list = new ArrayList<>();
-        for (int i = 0; i < 100; i++) {
-            list.add(i);
-        }
-        CountDownLatch latch = new CountDownLatch(list.size());
-        for (int i = 0; i < list.size(); i++) {
-            new ThreadTest(latch, list.get(i)).start();
+        final int count=100;
+        ExecutorService threadPool = Executors.newFixedThreadPool(20);
+        CountDownLatch latch = new CountDownLatch(count);
+        for (int i = 0; i < count; i++) {
+            threadPool.submit(new Thread(new ThreadTest2(latch)));
+//            new ThreadTest(latch).start();
         }
         latch.await();
-        System.out.println("结束了---------" + System.currentTimeMillis());
+        Thread.sleep(2000);
+        System.out.println("结束了---------"+ThreadTest2.index + "--------" + System.currentTimeMillis());
     }
 }
 
 
 class ThreadTest extends Thread {
     private CountDownLatch latch;
-    private int index;
+    public static int index = 0;
 
-    public ThreadTest(CountDownLatch latch, int index) {
+    public ThreadTest(CountDownLatch latch) {
         this.latch = latch;
-        this.index = index;
     }
 
     @Override
     public void run() {
+        index++;
         System.out.println(this.getName() + "----------" + index + "---------" + System.currentTimeMillis());
+        latch.countDown();
+    }
+}
+
+class ThreadTest2 implements Runnable {
+    private CountDownLatch latch;
+    public static int index = 0;
+
+    public ThreadTest2(CountDownLatch latch) {
+        this.latch = latch;
+    }
+
+    @Override
+    public void run() {
+        index++;
+        System.out.println(Thread.currentThread().getName() + "----------" + index + "---------" + System.currentTimeMillis());
         latch.countDown();
     }
 }

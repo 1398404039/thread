@@ -15,41 +15,9 @@ public class FixedThreadPool {
     public static void main(String[] args) {
 //        ExecutorService java.threadpools = Executors.newFixedThreadPool(5);
         MyThreadFactory myThreadFactory=new MyThreadFactory("TestPool");
-        ExecutorService threadPool = Executors.newFixedThreadPool(5,myThreadFactory);
-        ThreadTestUtils.threadTest(threadPool);
+
+        ExecutorService threadPool1 = Executors.newFixedThreadPool(5);
+        ExecutorService threadPool2 = Executors.newFixedThreadPool(5,myThreadFactory);
     }
 
-}
-
-class MyThreadFactory implements ThreadFactory{
-    private int          counter;
-    private String       name;
-    private List<String> stats;
-
-    public MyThreadFactory(String name)
-    {
-        counter = 1;
-        this.name = name;
-        stats = new ArrayList<String>();
-    }
-
-    @Override
-    public Thread newThread(Runnable runnable)
-    {
-        Thread t = new Thread(runnable, name + "-Thread_" + counter);
-        counter++;
-        stats.add(String.format("Created thread %d with name %s on %s \n", t.getId(), t.getName(), new Date()));
-        return t;
-    }
-
-    public String getStats()
-    {
-        StringBuffer buffer = new StringBuffer();
-        Iterator<String> it = stats.iterator();
-        while (it.hasNext())
-        {
-            buffer.append(it.next());
-        }
-        return buffer.toString();
-    }
 }
