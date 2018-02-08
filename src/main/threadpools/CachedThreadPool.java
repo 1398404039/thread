@@ -2,6 +2,8 @@ package main.threadpools;
 
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
+import java.util.concurrent.locks.ReentrantLock;
+
 import main.utils.ThreadTestUtils;
 
 public class CachedThreadPool {
@@ -12,7 +14,7 @@ public class CachedThreadPool {
 		cachedThreadPool1.execute(new Runnable() {
 			@Override
 			public void run() {
-
+				new ReentrantLock();
 			}
 		});
 		cachedThreadPool1.submit(new Runnable() {

@@ -69,5 +69,12 @@ public class ThreadPoolExecutorDemo {
         ThreadPoolExecutor threadPoolExecutor1 = new ThreadPoolExecutor(21,21,2000L,
                 TimeUnit.MILLISECONDS,new ArrayBlockingQueue<Runnable>(3),new ThreadPoolExecutor.AbortPolicy());
 
+        ExecutorService executorService1 = Executors.newCachedThreadPool();                    //SynchronousQueue
+        ExecutorService executorService2 = Executors.newFixedThreadPool(2);         //LinkedBlockingQueue
+        ExecutorService executorService5 = Executors.newSingleThreadExecutor();               //LinkedBlockingQueue
+        ExecutorService executorService4 = Executors.newScheduledThreadPool(1); //DelayedWorkQueue
+        ExecutorService executorService6 = Executors.newSingleThreadScheduledExecutor();      //DelayedWorkQueue
+        ExecutorService executorService3 = Executors.newWorkStealingPool();
+
     }
 }
